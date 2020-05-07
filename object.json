@@ -1,4 +1,7 @@
 {
   "name": "standalone_jave-1.8",
-  "type": "runtime"
+  "type": "runtime",
+  "authors": [
+    "6MuxRFV97fWKUBz59WTYhBGkXyWArtLi8XUy7ensHC74PiQ"
+  ]
 }
