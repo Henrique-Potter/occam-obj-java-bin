@@ -1,7 +1,36 @@
 {
-  "name": "standalone_jave-1.8",
-  "type": "runtime",
+  "name": "standalone_java",
+  "type": "language",
+  "environment": "linux",
+  "architecture": "x86-64",
   "authors": [
     "6MuxRFV97fWKUBz59WTYhBGkXyWArtLi8XUy7ensHC74PiQ"
-  ]
+  ],
+    "init": {
+    "env": {
+      "JAVA_HOME": "/usr/lib/jvm/java-8-openjdk/jre/bin/java"
+    },
+    "link": [
+      {
+        "source": "usr/bin",
+        "to": "/usr/bin"
+      },
+      {
+        "source": "usr/lib",
+        "to": "/usr/lib"
+      },
+      {
+        "source": "usr/share",
+        "to": "/usr/share"
+      },
+      {
+        "source": "java",
+        "to": "/usr/lib/jvm/java-8-openjdk/jre/bin/java"
+      }
+    ]
+  },
+    "run": {
+    "command": "/usr/lib/jvm/java-8-openjdk/jre/bin/java",
+    "interactive": true
+  }
 }
